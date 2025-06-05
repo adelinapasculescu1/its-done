@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mcca/features/home_screen/presentation/views/home_screen.dart';
 import 'package:mcca/features/leaderboard/presentation/views/leaderboard_screen.dart';
+import 'package:mcca/features/profile/presentation/views/profile_screen.dart';
 
 import '../core/theme/app_colors.dart';
+import 'community/presentation/views/community_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -13,13 +15,8 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
-  final List<Widget> _screens = [
-    HomeScreen(),
-    LeaderboardScreen(),
-    Text("community screen"),
-    Text("profile screen"),
-  ];
-  //final List<Widget> _screens = [HomeScreen(), LeaderboardScreen(), CommunityScreen(), ProfileScreen()];
+
+  final List<Widget> _screens = [HomeScreen(), LeaderboardScreen(), CommunityScreen(), ProfileScreen()];
 
   @override
   Widget build(BuildContext context) {

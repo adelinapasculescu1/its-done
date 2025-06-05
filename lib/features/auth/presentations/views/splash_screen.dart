@@ -13,10 +13,11 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() {
+  initState() {
     super.initState();
     navigate();
   }
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -30,6 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void navigate() {
     Future.delayed(Duration(seconds: 3), () {
       if (!mounted) return;
+
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => OnboardingScreen()));
     });
   }

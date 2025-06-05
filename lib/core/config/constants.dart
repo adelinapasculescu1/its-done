@@ -14,3 +14,5 @@ String streakIcons(int level) {
       return "assets/streak_fire.png";
   }
 }
+
+const aboutApp = "Rise is a powerful habit tracker designed to help users build and maintain habits, stay consistent, and reach their goals. With features like streak tracking, social habit sharing, reminders, and leaderboards, Rise makes habit-building engaging and effective.";

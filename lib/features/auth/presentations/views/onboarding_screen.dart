@@ -114,4 +114,3 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 }
-

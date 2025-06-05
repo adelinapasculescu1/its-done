@@ -16,19 +16,21 @@ class AuthScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
+
             Image.asset("assets/logo.png", height: 200),
             30.height(),
-            Text("$appName".cap, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+
+            Text("$appName above anything".cap, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+
             Spacer(),
+
             ElevatedButton.icon(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.all(AppColors.primaryColor),
                 foregroundColor: WidgetStateProperty.all(AppColors.white),
               ),
               icon: Icon(Icons.g_mobiledata, color: AppColors.red),
-              onPressed: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => MainScreen()));
-              },
+              onPressed: () {},
               label: Text("Rise with Google"),
             ),
             20.height(),
